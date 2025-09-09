@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Miniaplicación de Bienvenida (simple)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h1>Miniaplicación de Bienvenida</h1>
+
+  <!-- Formulario -->
+  <form id="form">
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" type="text" required />
+    <br /><br />
+
+    <label for="edad">Edad:</label>
+    <input id="edad" type="number" min="1" step="1" required />
+    <br /><br />
+
+    <!--  ocupación -->
+    <label for="ocupacion">Ocupación (opcional):</label>
+    <input id="ocupacion" type="text" />
+    <br /><br />
+
+    <button id="enviar" type="submit">Enviar</button>
+  </form>
+
+  <!-- Mensajes en pantalla -->
+  <p id="mensaje"></p>
+  <p id="estado"></p> <!-- muestra el estado de la Promesa -->
+
+  <h2>Objeto en JSON</h2>
+  <pre id="json">{}</pre>
+
+  <!-- Vinculación del script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
